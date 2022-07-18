@@ -1,0 +1,209 @@
+body{
+    background: #F3F1FF;;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    background-color: white;
+    width: 870px;
+    border-radius: 5px;
+    margin-top: 21px;
+}
+.top-players{
+    font-family: 'Gulzar', serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif; 
+}
+.top-players h1{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #562EFF;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    margin-top: 30px;
+    padding-bottom: 21px;
+}
+.player img{
+    Width: 56px;
+    Height: 56px;
+    padding-left: 30px;
+    
+}
+.player h3{
+    padding-left: 16px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    width:90%;
+}
+.top-blogs h1{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #562EFF;
+    padding-top: 11px;
+    padding-left: 30px;
+}
+.thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog{
+    display: flex;
+}
+.bal{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+    padding-left: 30px;
+    padding-bottom: 42px;
+}
+.blog-info h3{
+    padding-left: 16px;
+}
+.blog-author{
+    padding-left: 16px;
+    color: #9F9F9F;;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.blog-author a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #562EFF;
+}
+.blog-info h3{
+    font-size: 20px;
+}
+.latest-couse h1{
+    font-family: 'Gulzar', serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #562EFF;
+    padding-left: 30px;
+}
+.course img{
+    width: 224px;
+    height: 104px;
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5px;
+}
+.course{
+    padding-left: 28px;
+    background: #FFFFFF;
+    Width: 252.42px;
+    Height: 269.79px;
+    border: 1px solid white;    
+}
+.course h3,a{
+    font-family: 'Gulzar', serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.course a{
+    text-decoration: none;
+    color: #ED6B4F;
+}
+.fa-star.filled{
+    color:#FFC014;
+}
+.fa-star.emplty{
+    color: #AEAEAE;
+    opacity: 0.25;
+}
+
+.course-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 19.25px;
+}
+.time-duration{
+    background: #FFE4E8;
+    border-radius: 14.6913px;
+    color: #FF4A60;
+    width: 95px;
+    height: 30px;
+}
+.time-duration .clock{
+    padding: 0 7px;
+    margin-top: 5px;
+}
+@media  only screen and (max-width:688px) { 
+    .container{
+        width: 100%;
+    }
+    .players, .bal, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog{
+        flex-direction: column;
+    }
+}
+@media  only screen and (min-width:689px) and (max-width:992px) { 
+        /* .container {
+                width: 100%;
+            } */
+            .players,.bal,.courses {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .container{
+                padding-left: 100px;
+            }
+}
+@media  only screen and (min-width:993px) and (max-width:1312px) { 
+        /* .container {
+                width: 100%;
+            } */
+            .players,.courses{
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .bal{
+                grid-template-columns: repeat(2, 1fr);
+            }
+}
+@media  only screen and (min-width:1313px) { 
+        /* .container {
+                width: 100%;
+            } */
+            .players,.courses {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .bal{
+                grid-template-columns: repeat(2, 1fr);
+            }
+}
